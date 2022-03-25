@@ -1,0 +1,13 @@
+﻿.grid-container{
+  display: grid;
+}
+
+.grid-center{
+  margin: auto;
+  padding: 20vh 0 0 0;
+  width: 80%;
+}
+
+.grid-3{
+ grid-template-columns: 1fr 1fr 1fr; 
+}

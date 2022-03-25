@@ -1,10 +1,36 @@
-﻿h1{
-  height: 100vh;
-  display: flex;
-  color: red;
-  align-items: center;
-  justify-content: center;
-  font-size: 5em;
-  font-family: sans-serif;
-  text-shadow: 0 0 20px black;
+﻿@use "../abstracts" as *;
+
+h1{
+  color: $primary-color;
+  font-family: system-ui;
+  font-size: 10vw;
+  margin: 0;
+}
+
+
+.dayOfWeek{
+  color: $primary-color;
+  font-size: 5vw;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.neonText{
+  $primaryShadowColor: #ababab;
+  $secondaryShadowColor: #019d69;
+  text-shadow:
+  /*Primary Glow Color*/
+  0 0 4px $primaryShadowColor,
+  0 0 7px $primaryShadowColor,
+  0 0 8px $primaryShadowColor,
+  /*Secondary Glow Color*/
+  0 0 6px $secondaryShadowColor,
+  0 0 10px $secondaryShadowColor,
+  0 0 11px $secondaryShadowColor,
 }

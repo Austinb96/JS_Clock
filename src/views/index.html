@@ -5,7 +5,17 @@
         <title>JS Clock</title>
     </head>
     <body>
-        <div id="clock">
+        <div class="grid-container grid-center">
+            <div id="dayOfWeek" class="dayOfWeek neonText text-center"></div>
+            <h1 id="clock" class="neonText text-center"></h1>
+            <div class="toggle grid-container grid-3">
+                <p class="text-right">12H</p>
+                <div>
+                    <input type="checkbox" id="militaryTimeToggle">
+                    <label for="militaryTimeToggle"></label>
+                </div>
+                <p>24H</p>
+            </div>
         </div>
     </body>
 </html>
