@@ -7,16 +7,20 @@ function currentTime() {
     let ss = date.getSeconds();
     let session = "AM";
     
-    var militaryTimeToggle = document.getElementById("militaryTimeToggle");
+    let militaryTimeToggle = document.getElementById("militaryTimeToggle");
     
     
     if(hh===0){
         hh = 12;
     }
     
-    if(hh > 12 && militaryTimeToggle[i].checked) {
-        hh = hh - 12;
+    if(hh > 12) {
         session = "PM";
+    }
+    
+    if(!militaryTimeToggle.checked)
+    {
+        hh = hh - 12;
     }
     
     hh = (hh < 10) ? "0" + hh : hh;
